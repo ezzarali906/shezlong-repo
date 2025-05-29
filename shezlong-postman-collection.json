@@ -1,0 +1,205 @@
+{
+  "info": {
+    "name": "Shezlong Project API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "12345678-abcd-1234-abcd-123456abcdef"
+  },
+  "item": [
+    {
+      "name": "Therapists",
+      "item": [
+        {
+          "name": "Create Therapist",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Dr. Ahmed\", \"specialization\": \"Psychologist\"}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/therapists",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "therapists"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get All Therapists",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/therapists",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "therapists"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clients",
+      "item": [
+        {
+          "name": "Create Client",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"name\": \"Client One\"}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/clients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "clients"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get All Clients",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/clients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "clients"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TimeSlots",
+      "item": [
+        {
+          "name": "Create TimeSlot",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"date\": \"2025-06-01\", \"time\": \"12:00\", \"therapistId\": 1}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/timeslots",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "timeslots"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get All TimeSlots",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/timeslots",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "timeslots"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bookings",
+      "item": [
+        {
+          "name": "Create Booking",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"clientId\": 1, \"timeSlotId\": 1}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/bookings",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "bookings"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get All Bookings",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3000/bookings",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "bookings"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
